@@ -1,0 +1,13 @@
+<?php
+$sexo = "hombre";
+function dameNombre(){
+    $nombre = "maria"; // variable local
+
+
+}
+
+function dameDatos($sexo){
+
+}
+
+?>
