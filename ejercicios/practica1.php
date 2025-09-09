@@ -1,57 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Estructura de una Función en PHP</title>
 </head>
 <body>
-<?php
-//1
-/*
-$nombre = "LEONEL";
+    <h2>Ejemplo de Funciones en PHP</h2>
 
-echo "<h1>HOLA '$nombre' COMO ESTAS? <br> 😊</h1>";
-*/
+    <?php
+    // 1. Función sin parámetros y sin retorno
+    function saludar() {
+        echo "¡Hola, bienvenido a PHP!<br>";
+    }
 
-//2
+    // 2. Función con parámetros
+    function sumar($a, $b) {
+        $resultado = $a + $b;
+        echo "La suma de $a + $b = $resultado<br>";
+    }
 
-/*
-$edad1 = 23;
-$edad2 = 50;
+    // 3. Función con parámetros y retorno
+    function cuadrado($numero) {
+        return $numero * $numero;
+    }
 
-if($edad1 > $edad2){
-  
-    $resultado = "MAYOR";
-    echo "La edad1 ($edad1) es MAYOR que la edad2 ($edad2)";
-}elseif($edad1 < $edad2){
-    
-    $resultado = "MAYOR";
-    echo "La edad2 " . $edad2 . " es " . $resultado . " que edad1 " . $edad1;
-}else{
-    echo "Las DOS EDADES SON IGUALES";
-}
-*/
- 
-//3
-
-/*
-$password = "123";
-
-// Pedir contraseña al usuario desde consola
-$exit = readline("Ingrese la contraseña: ");
-
-
-if ($password === $exit){
-    echo "Acceso concedido";
-}else{
-    echo "CONTRASEÑA INCORRECTA";
-}
-
-*/
-
-
-?>
-    
+    // --- Uso de las funciones ---
+    saludar();             // Llamamos a la primera función
+    sumar(5, 3);           // Llamamos a la segunda función
+    $res = cuadrado(4);    // Guardamos el resultado de la tercera
+    echo "El cuadrado de 4 es $res";
+    ?>
 </body>
 </html>
